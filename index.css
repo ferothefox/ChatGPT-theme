@@ -1,11 +1,17 @@
-.bg-gray-800 {
-    --tw-bg-opacity: 1;
-    background-color: #18191d;
+@media (prefers-color-scheme: dark) {
+    html, body, .container {
+        background: #0b0c0e;
+    }
 }
 
 .dark body,
 .dark html {
     background: #0b0c0e;
+}
+
+.bg-gray-800 {
+    --tw-bg-opacity: 1;
+    background-color: #18191d;
 }
 
 a.bg-gray-800 {
