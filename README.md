@@ -1,4 +1,4 @@
 # ChatGPT Theme
 
 Styles that I personally use daily for ChatGPT.
-![image](https://user-images.githubusercontent.com/52982404/228706318-630c1b6c-8a75-4f0e-875d-a65ee705231d.png)
+![image](https://github.com/FeroTheFox/ChatGPT-theme/assets/52982404/d94673ae-bfa4-479b-a0a3-b5d868985818)
