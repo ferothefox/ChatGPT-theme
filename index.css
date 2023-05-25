@@ -1,8 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');   
+
+html, body, #__next {
+    font-family: 'Karla', sans-serif;
+}
+
 @media (prefers-color-scheme: dark) {
     html,
     body,
     .container {
-        background: #0b0c0e;
+        background: #000;
     }
 }
 
@@ -12,22 +18,22 @@
 
 .dark body,
 .dark html {
-    background: #0b0c0e;
+    background: #000;
 }
 
 .bg-gray-800 {
     --tw-bg-opacity: 1;
-    background-color: #18191d;
+    background-color: #000;
 }
 
 .bg-gray-900 {
     --tw-bg-opacity: 1;
-    background-color: #0b0c0e;
+    background-color: #000;
 }
 
 .dark .dark\:bg-gray-700 {
     --tw-bg-opacity: 1;
-    background-color: #0b0c0e;
+    background-color: #000;
 }
 
 .dark .dark\:bg-gray-800 {
@@ -35,9 +41,18 @@
     background-color: #0b0c0e;
 }
 
+.dark .dark\:bg-gray-900 {
+    --tw-bg-opacity: 1;
+    background-color: #0b0c0e;
+}
+
 .dark .dark\:bg-\[\#444654\] {
     --tw-bg-opacity: 1;
-    background-color: #0a0b0c;
+    background-color: #0b0c0e;
+}
+
+.dark .dark\:bg-gray-800\/90 {
+  background-color: rgba(0,0,0,.9);  
 }
 
 /* Chat patches */
@@ -46,7 +61,7 @@ main.flex-1.items-stretch.overflow-hidden.flex-col.flex.transition-width.w-full.
     width: unset;
 
     border-radius: 20px 20px;
-    border-color: rgba(32, 33, 35, 0.2) !important;
+    border-color: rgba(32, 33, 35, 0) !important;
     border-width: 2px;
 
     margin-top: 12px;
@@ -78,7 +93,7 @@ main.flex-1.items-stretch.overflow-hidden.flex-col.flex.transition-width.w-full.
 }
 
 .from-gray-900 {
-    --tw-gradient-from: #0b0c0e;
+    --tw-gradient-from: #000;
     --tw-gradient-to: rgba(32, 33, 35, 0);
     --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
 }
@@ -87,7 +102,7 @@ main.flex-1.items-stretch.overflow-hidden.flex-col.flex.transition-width.w-full.
     .dark .dark\:md\:bg-vert-dark-gradient {
         background-image: linear-gradient(180deg,
                 rgba(53, 55, 64, 0),
-                #0b0c0e 58.85%);
+                #0a0b0c 58.85%);
     }
 }
 
@@ -110,7 +125,8 @@ div.px-3.pt-2.pb-3.text-center.text-xs {
 /* sidebar patches */
 /* items */
 a.group {
-    border-radius: 9999px;
+    margin-bottom: 4px;
+/*     border-radius: 9999px; */
 }
 
 .group:hover .group-hover\:from-\[\#2A2B32\] {
@@ -125,17 +141,8 @@ a.group {
 }
 
 /* bottom links */
-a.text-sm.cursor-pointer.text-white.duration-200.transition-colors.hover\:bg-gray-500\/10.rounded-md.gap-3.items-center.px-3.py-3.flex:nth-of-type(3),
-/* upgrade to pro */
-a.text-sm.cursor-pointer.text-white.duration-200.transition-colors.hover\:bg-gray-500\/10.rounded-md.gap-3.items-center.px-3.py-3.flex:nth-of-type(4),
-/* updates and FAQ */
-a.text-sm.cursor-pointer.text-white.duration-200.transition-colors.hover\:bg-gray-500\/10.rounded-md.gap-3.items-center.px-3.py-3.flex:nth-of-type(5) {
+.rounded-md.hover\:bg-gray-800.text-sm.cursor-pointer.text-white.duration-200.transition-colors.gap-3.items-center.px-3.py-3.flex {
     display: none;
-}
-
-/* logout */
-a.text-sm.cursor-pointer.text-white.duration-200.transition-colors.hover\:bg-gray-500\/10.rounded-md.gap-3.items-center.px-3.py-3.flex:nth-of-type(2) {
-    color: #ff7171;
 }
 
 /* new chat btn */
@@ -158,7 +165,7 @@ button.hover\:text-white.p-1 {
 
 /* hljs override */
 pre>div.bg-black {
-    background: #18191d;
+    background: #000;
 }
 
 .hljs {
@@ -233,4 +240,33 @@ pre>div.bg-black {
 
 .hljs-link {
     text-decoration: underline;
+}
+
+::-webkit-scrollbar {
+    width: 4px;
+}
+
+.w-\[30px\] > .flex.relative {
+    border-radius: 9999px;
+}
+
+.w-\[30px\] > .flex.relative > span > .rounded-sm {
+    border-radius: 9999px;
+}
+
+.dark .dark\:border-gray-900\/50 {
+    border-color: transparent;
+}
+
+.mb-4.rounded-md.bg-black {
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.gap-3\.5.text-center.items-start.md\:flex {
+    display: none;
+}
+
+.dark\:text-gray-100.px-6.md\:flex-col.md\:flex.md\:h-full.lg\:max-w-3xl.md\:max-w-2xl.mx-auto.w-full.text-gray-800 {
+    display: none;
 }
