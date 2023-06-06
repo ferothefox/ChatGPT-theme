@@ -67,6 +67,7 @@ main.flex-1.items-stretch.overflow-hidden.flex-col.flex.transition-width.w-full.
     margin-top: 12px;
     margin-bottom: 12px;
     margin-right: 12px;
+    margin-left: 12px;
 }
 
 /* Regenerate Button patches */
@@ -269,4 +270,29 @@ pre>div.bg-black {
 
 .dark\:text-gray-100.px-6.md\:flex-col.md\:flex.md\:h-full.lg\:max-w-3xl.md\:max-w-2xl.mx-auto.w-full.text-gray-800 {
     display: none;
+}
+
+.rounded-md.hover\:bg-gray-800.text-sm.cursor-pointer.text-white.duration-200.transition-colors.gap-3.items-center.p-3.flex {
+    display: none;
+}
+
+/* new chatbar margin */
+.pt-2.dark\:md\:bg-vert-dark-gradient.md\:\!bg-transparent.dark\:bg-gray-800.bg-white.md\:bg-vert-light-gradient.md\:dark\:border-transparent.md\:border-transparent.dark\:border-white\/20.md\:border-t-0.border-t.w-full.left-0.bottom-0.absolute {
+    padding-bottom: 8px;
+    align-items: center;
+}
+
+@media screen and (max-width:768px) {
+main.flex-1.items-stretch.overflow-hidden.flex-col.flex.transition-width.w-full.h-full.relative {
+    margin-bottom: 0 !important;
+    margin-right: 0 !important;
+    border-radius: 20px 20px 0 0 !important;
+}
+    
+    .bg-gray-600 { background-color: rgba(0, 0, 0, 0.75)}
+    .dark .dark\:border-white\/20 { border-color: transparent;}
+}
+
+.dark .dark\:border-white\/20 {
+    border-color: transparent;
 }
